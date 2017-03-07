@@ -23,28 +23,28 @@ It will run on port 8888 by default and points to my github repo that hosts all 
 
 #2-eureka-service
 
-It will run on port 8761 open the following URL in your browser to access the dashboard http://localhost:8761/
+It will run on port 8761 open the following URL in your browser to access the dashboard ```http://localhost:8761/```
 
 #3-hystrix-service
 
-The dashboard is available on port 8010: http://localhost:8010/hystrix
+The dashboard is available on port 8010: ```http://localhost:8010/hystrix```
 
 #4-zipkin-service
 
-It will run on port 9411 http://localhost:9411/
+It will run on port 9411 ```http://localhost:9411/```
 
 #5-share-price-service
 
 Last but not least the share price service is available on port 8000.
 
-http://localhost:8000 will return all share prices (HATEOS format)
+```http://localhost:8000``` will return all share prices (HATEOS format)
 
-http://localhost:8000/sharePrices will return a JSON format response 
+```http://localhost:8000/sharePrices``` will return a JSON format response 
 
-http://localhost:8000/sharePrices/{id} will return the share price for specified id
+```http://localhost:8000/sharePrices/{id}``` will return the share price for specified id
 
-http://localhost:8000/sharePrices/search/by-name?rn=ING will return share price for the specified name
+```http://localhost:8000/sharePrices/search/by-name?rn=ING``` will return share price for the specified name
 
-http://localhost:8000/message will display a message setup via the config-service file
+```http://localhost:8000/message``` will display a message setup via the config-service file
 
 RabbitMQ has already been setup so that messages can be sent through channels from another micro service and vice versa (prices endpoint)
